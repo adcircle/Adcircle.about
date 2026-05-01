@@ -83,32 +83,69 @@ nav a:hover{color:red}
 }
 
 /* STICKMAN FIGHT */
-.fight-area{
+  .fight-area{
   position:fixed;
   bottom:90px;
   right:20px;
-  width:120px;
+  width:140px;
+  height:100px;
+}
+
+.fighter{
+  position:absolute;
+  width:40px;
   height:80px;
 }
 
-.stickman{
-  position:absolute;
-  width:20px;
-  height:40px;
-  border-radius:10px;
+.red div{background:red}
+.black div{background:black}
+
+.head{
+  width:14px;height:14px;border-radius:50%;margin:auto;
 }
 
-.left{
-  background:red;
-  left:10px;
-  animation:leftFight 1s infinite;
+.body{
+  width:4px;height:25px;margin:2px auto;
 }
 
-.right{
-  background:black;
-  right:10px;
-  animation:rightFight 1s infinite;
+.arm, .leg{
+  position:absolute;width:4px;height:20px;
 }
+
+.left-arm{left:2px;top:20px}
+.right-arm{right:2px;top:20px}
+
+.left-leg{top:45px;left:8px}
+.right-leg{top:45px;right:8px}
+
+.red{left:10px;animation:redFight 1s infinite}
+.black{right:10px;animation:blackFight 1s infinite}
+
+@keyframes redFight{
+  0%{transform:translateX(0)}
+  50%{transform:translateX(25px)}
+  100%{transform:translateX(0)}
+}
+
+@keyframes blackFight{
+  0%{transform:translateX(0)}
+  50%{transform:translateX(-25px)}
+  100%{transform:translateX(0)}
+}
+
+.red .right-arm{
+  animation:punch 1s infinite;
+}
+.black .left-arm{
+  animation:punch 1s infinite reverse;
+}
+
+@keyframes punch{
+  0%{transform:rotate(0)}
+  50%{transform:rotate(60deg)}
+  100%{transform:rotate(0)}
+}
+.
 
 @keyframes leftFight{
   0%{transform:translateX(0) rotate(0)}
@@ -150,4 +187,25 @@ If you are serious about growing your business online and want a reliable market
 </div><!-- WHATSAPP --><div class="whatsapp">
 <a href="https://wa.me/919517000518">Start Chat</a>
 </div></body>
+  <div class="fight-area">
+
+  <div class="fighter red">
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="arm left-arm"></div>
+    <div class="arm right-arm"></div>
+    <div class="leg left-leg"></div>
+    <div class="leg right-leg"></div>
+  </div>
+
+  <div class="fighter black">
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="arm left-arm"></div>
+    <div class="arm right-arm"></div>
+    <div class="leg left-leg"></div>
+    <div class="leg right-leg"></div>
+  </div>
+
+  </div>
 </html>
