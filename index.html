@@ -1,0 +1,153 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - AdCircle</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet"><style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#fff;color:#111}
+
+header{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:20px 40px;background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05)
+}
+.logo img{height:40px;cursor:pointer}
+
+nav{display:flex;gap:25px}
+nav a{
+  text-decoration:none;color:#111;font-weight:700;position:relative;
+}
+nav a::after{
+  content:'';position:absolute;bottom:-5px;left:0;width:0;height:2px;background:red;transition:0.3s
+}
+nav a:hover::after{width:100%}
+nav a:hover{color:red}
+
+.hero{
+  text-align:center;
+  padding:80px 20px;
+}
+.hero h1{
+  font-size:48px;
+  font-weight:800;
+  animation:glow 2s infinite alternate;
+}
+.hero span:first-child{color:red}
+.hero span:last-child{color:black}
+
+@keyframes glow{
+  0%{letter-spacing:2px}
+  100%{letter-spacing:6px;color:red}
+}
+
+.content{
+  max-width:900px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.content p{
+  margin-bottom:25px;
+  line-height:1.7;
+  font-size:16px;
+  animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+}
+.whatsapp a{
+  background:#25D366;
+  color:#fff;
+  padding:15px 20px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:700;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.1)}
+  100%{transform:scale(1)}
+}
+
+/* STICKMAN FIGHT */
+.fight-area{
+  position:fixed;
+  bottom:90px;
+  right:20px;
+  width:120px;
+  height:80px;
+}
+
+.stickman{
+  position:absolute;
+  width:20px;
+  height:40px;
+  border-radius:10px;
+}
+
+.left{
+  background:red;
+  left:10px;
+  animation:leftFight 1s infinite;
+}
+
+.right{
+  background:black;
+  right:10px;
+  animation:rightFight 1s infinite;
+}
+
+@keyframes leftFight{
+  0%{transform:translateX(0) rotate(0)}
+  50%{transform:translateX(20px) rotate(20deg)}
+  100%{transform:translateX(0) rotate(0)}
+}
+
+@keyframes rightFight{
+  0%{transform:translateX(0) rotate(0)}
+  50%{transform:translateX(-20px) rotate(-20deg)}
+  100%{transform:translateX(0) rotate(0)}
+}
+
+</style></head><body><header>
+<div class="logo" onclick="location.href='https://adcircle.github.io/Adcircle/#'">
+<img src="logo.png">
+</div><nav>
+<a href="https://adcircle.github.io/Adcircle/#">Home</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+</header><section class="hero">
+<h1><span>Ad</span><span>Circle</span></h1>
+</section><section class="content"><p>
+We are a digital marketing agency focused on real growth, not just numbers. At AdCircle, our goal is simple — help businesses reach more people, generate quality leads, and increase sales using smart advertising strategies.
+</p><p>
+We understand that every business is different. That’s why we don’t use copy-paste methods. We create customized campaigns based on your audience, your niche, and your goals so that every rupee you spend gives maximum return.
+</p><p>
+Our main strength lies in Meta Ads. We run high-performing Facebook and Instagram campaigns that are designed to reach the right people at the right time. Instead of random reach, we focus on targeted reach that actually converts.
+</p><p>
+Along with ads, we also build landing pages and websites that are optimized for conversions. Because getting traffic is not enough — converting that traffic into leads and customers is what really matters.
+</p><p>
+We have already helped multiple small businesses and growing brands achieve better visibility and consistent leads. Our approach is simple, transparent, and focused on results — no fake promises, only real performance.
+</p><p>
+If you are serious about growing your business online and want a reliable marketing partner, AdCircle is built for you. We don’t just run ads, we build growth systems that help your business scale.
+</p></section><!-- STICKMAN --><div class="fight-area">
+  <div class="stickman left"></div>
+  <div class="stickman right"></div>
+</div><!-- WHATSAPP --><div class="whatsapp">
+<a href="https://wa.me/919517000518">Start Chat</a>
+</div></body>
+</html>
