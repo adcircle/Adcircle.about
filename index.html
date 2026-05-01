@@ -83,44 +83,7 @@ nav a:hover{color:red}
 }
 
 /* STICKMAN FIGHT */
-  .fight-area{
-  position:fixed;
-  bottom:90px;
-  right:20px;
-  width:140px;
-  height:100px;
-}
-
-.fighter{
-  position:absolute;
-  width:40px;
-  height:80px;
-}
-
-.red div{background:red}
-.black div{background:black}
-
-.head{
-  width:14px;height:14px;border-radius:50%;margin:auto;
-}
-
-.body{
-  width:4px;height:25px;margin:2px auto;
-}
-
-.arm, .leg{
-  position:absolute;width:4px;height:20px;
-}
-
-.left-arm{left:2px;top:20px}
-.right-arm{right:2px;top:20px}
-
-.left-leg{top:45px;left:8px}
-.right-leg{top:45px;right:8px}
-
-.red{left:10px;animation:redFight 1s infinite}
-.black{right:10px;animation:blackFight 1s infinite}
-
+  .
 @keyframes redFight{
   0%{transform:translateX(0)}
   50%{transform:translateX(25px)}
@@ -143,7 +106,12 @@ nav a:hover{color:red}
 @keyframes punch{
   0%{transform:rotate(0)}
   50%{transform:rotate(60deg)}
-  100%{transform:rotate(0)}
+  100%{transform:rotat.fight-animation{
+  position:fixed;
+  bottom:90px;
+  right:20px;
+  z-index:999;
+  }e(0)}
 }
 .
 
@@ -184,28 +152,18 @@ If you are serious about growing your business online and want a reliable market
 </p></section><!-- STICKMAN --><div class="fight-area">
   <div class="stickman left"></div>
   <div class="stickman right"></div>
+  <div class="fight-animation">
+  <lottie-player 
+    src="https://assets2.lottiefiles.com/packages/lf20_touohxv0.json"
+    background="transparent"
+    speed="1"
+    style="width:120px;height:120px;"
+    loop autoplay>
+  </lottie-player>
+  </div>
 </div><!-- WHATSAPP --><div class="whatsapp">
 <a href="https://wa.me/919517000518">Start Chat</a>
 </div></body>
-  <div class="fight-area">
-
-  <div class="fighter red">
-    <div class="head"></div>
-    <div class="body"></div>
-    <div class="arm left-arm"></div>
-    <div class="arm right-arm"></div>
-    <div class="leg left-leg"></div>
-    <div class="leg right-leg"></div>
-  </div>
-
-  <div class="fighter black">
-    <div class="head"></div>
-    <div class="body"></div>
-    <div class="arm left-arm"></div>
-    <div class="arm right-arm"></div>
-    <div class="leg left-leg"></div>
-    <div class="leg right-leg"></div>
-  </div>
-
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </div>
 </html>
